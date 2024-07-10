@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <style>
+        body.swal2-height-auto{
+            height: 100dvh !important;
+        }
+    </style>
+    <main>
+      <section class="left-panel">
+        <header>
+          <div class="logo">
+            <a
+              href="https://www.aluracursos.com/promo/AprendeConAluraLatam"
+              target="_blank"
+            >
+              <img src="/assets/img/Logo.png" alt="Logo alura" />
+            </a>
+          </div>
+        </header>
+
+        <textarea
+          id="input-text"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <article>
+          <div class="info">
+            <span>!</span> Solo letras minúsculas y sin acentos
+          </div>
+          <div class="buttons">
+            <button id="encrypt-btn" class="encrypt">Encriptar</button>
+            <button id="decrypt-btn" class="decrypt">Desencriptar</button>
+          </div>
+        </article>
+      </section>
+      <section class="right-panel">
+        <div class="no-content" id="output">
+          <img
+            src="/assets/img/Muneco.png"
+            alt="Ningún mensaje encontrado"
+            id="img-text-not"
+          />
+          <p id="output-message">Ningún mensaje fue encontrado</p>
+          <span id="output-description"
+            >Ingresa el texto que desees encriptar o desencriptar.</span
+          >
+
+        </div>
+        <button class="decrypt btn-copiar" id="btn-copiar"> Copiar</button>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
